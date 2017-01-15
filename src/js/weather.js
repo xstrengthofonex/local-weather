@@ -50,7 +50,7 @@ function getWeather(lat, lon){
 			var weather = response.query.results.channel.item.condition,
 			    location = response.query.results.channel.location,
 			    image;
-
+			$(".loader").hide();
 			$(".card").fadeIn("slow");
 			$(".card").css("display", "table");
 			
